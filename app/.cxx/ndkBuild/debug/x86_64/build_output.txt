@@ -1,0 +1,11 @@
+Android NDK: OpenCV: You should ignore warning about 'non-system libraries in linker flags' and 'opencv_java' library.    
+Android NDK:         'OPENCV_INSTALL_MODULES:=on' can be used to build APK with included OpenCV binaries    
+rm -f /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/*
+rm -f /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdbserver
+rm -f /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdb.setup
+mkdir -p /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64
+echo [x86_64] "Gdbserver      ": "[x86_64-linux-android] /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdbserver"
+install -p /Users/quytech-unity/Library/Android/sdk/ndk/20.1.5948944/prebuilt/android-x86_64/gdbserver/gdbserver /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdbserver
+echo [x86_64] "Gdbsetup       ": "/Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdb.setup"
+echo "set solib-search-path /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/obj/local/x86_64" > /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdb.setup
+echo "directory /Users/quytech-unity/Library/Android/sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64/sysroot /Users/quytech-unity/Library/Android/sdk/ndk/20.1.5948944/sources/cxx-stl/system" >> /Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/debug/lib/x86_64/gdb.setup

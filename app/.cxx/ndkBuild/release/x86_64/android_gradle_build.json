@@ -1,0 +1,11 @@
+{
+  "buildFiles": [
+    "/Users/quytech-unity/Documents/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk"
+  ],
+  "cleanCommands": [],
+  "buildTargetsCommand": "/Users/quytech-unity/Library/Android/sdk/ndk/20.1.5948944/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/quytech-unity/Documents/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/quytech-unity/Documents/AndroidStudioProjects/OpenCVIntegration/app/build/intermediates/ndkBuild/release/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {},
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

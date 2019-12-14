@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OpenCVIntegration</string>
+    <string name="str_grey_scale">Gray Scale</string>
+</resources>
